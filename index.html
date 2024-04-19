@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flyer Mochila y nos fuimos</title>
+
+<style>
+  @font-face {
+  font-family: 'Porcelain';
+  src: url('Fonts/Porcelain.ttf') format('truetype'); /* Reemplaza 'porcelain.ttf' con el nombre del archivo de la fuente */
+  /* Agrega otras fuentes aquí para soporte cruzado si es necesario */
+}
+  body {
+    font-family: 'Porcelain', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-container {
+    max-width: 600px; /* Ancho máximo del contenedor principal */
+    margin: 10px auto; /* Centrar el contenedor en la página */
+    background-color: #e7e5e5;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  h1 {
+    color: #FFBD59;
+    text-align: center;
+    font-family: 'Porcelain', sans-serif;
+    margin-top: 5px; /* Eliminar el margen superior del titulo */
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+
+  a{
+    color: #FFBD59;
+    font-size: 28px;
+  }
+
+  h2 {
+    color: #FFBD59;
+    text-align: center;
+    font-family: 'Porcelain', sans-serif;
+    margin-top: 10px; /* Eliminar el margen superior del titulo */
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #FFF; /* Cambiar color del texto a blanco */
+    text-align: center;
+    margin: 5px 0; 
+    font-size: 20px;
+  }
+
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  .containerlogo {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center;
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px 0; /* Margen superior e inferior entre contenedores */
+  }
+
+
+  .containerlogo img {
+    width: auto; /* Ancho automático */
+    max-width: 15%; /* Máximo ancho igual al ancho del contenedor */
+    height: auto; /* Altura automática */
+    margin-top: 10px; /* Margen superior para separar la imagen del texto */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen del texto*/
+    float: right;
+  }
+  .containerpromo {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center;
+    background-color:#FBAB2A ;
+    padding: 5px;
+    border-radius: 0px;
+  }
+  .container {
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center;
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    margin: 10px 0; /* Margen superior e inferior entre contenedores */
+    margin-top: 0px; /* Espacio entre este contenedor y el de arriba */
+  }
+
+
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center; /* Centra las imágenes horizontalmente */
+}
+.img-align{
+    flex-wrap: wrap;
+}
+
+.collage img {
+    width: 500px; /* Establece el ancho deseado para las imágenes */
+    height: 210px; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+    margin: 0px; /* Espaciado entre imágenes */
+}
+
+
+  .productos {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap; /* Para que los elementos se envuelvan dentro del contenedor */
+  justify-content: center; /* Para distribuir uniformemente los elementos */
+  padding: 15px; /* Agregar relleno para separar los elementos del borde */
+ /* Eliminar el margen exterior */
+}
+
+.productos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 5px 1.5%; /* Ajustar el margen entre los elementos */
+  padding: 18px; /* Agregar relleno alrededor de los elementos */
+  border: solid #ffffff;
+  border-radius: 10px;
+}
+
+.productos li h2 {
+  margin-top: 5px;
+  margin-bottom: 15px; /* Ajustar el margen inferior del texto */
+  font-size: 25px;
+}
+
+
+.productos img {
+  width: auto; /* Ancho automático */
+  max-width: 100%; /* Ajustar ancho máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Altura automática */
+  margin-top: 2px; /* Margen superior para separar la imagen del texto */
+  margin-bottom: 5px; /* Margen inferior para separar la imagen del texto */
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.producto-descripcion{
+    font-size: 20px;
+}
+
+.LOGO {
+  display: flex; /* Utilizar flexbox para alinear los elementos */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+.LOGO a {
+  margin: 0 10px; /* Ajustar el espacio entre los iconos */
+  width: 35px; 
+  height: 35px;
+}
+
+.texto-con-sombra {
+  padding: 0px; /* Ajusta el relleno según sea necesario */
+  /*box-shadow: inset 50px 50px 10px #FFBD59; /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Porcelain', sans-serif;
+  margin-top: 0px; /* Eliminar el margen superior del titulo */
+  font-size: 55px;
+  margin-bottom: 0px;
+ /* -webkit-text-stroke: 0.1px rgb(0, 0, 0); /* Establece un borde azul de 1px alrededor de cada letra */
+ /* text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Desplazamiento X, Desplazamiento Y, Desenfoque, Color */
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="containerlogo">
+    <h1 style="font-size: 45px; margin-right: 20px;">MOCHILA&NOSFUIMOS</h1>
+    <img src="http://imgfz.com/i/MIAwoxg.png" alt="LOGO">
+  </div>
+  
+  <!-- Nuevo contenedor -->
+<div class="containerpromo">
+  <main>
+    <h1 class="texto-con-sombra">¡VIAJANDO POR EL MUNDO!</h1>
+  </main>
+</div>
+  <div class="container">
+    <main>
+      <h1>¡Destinos Internacionales!</h1>
+      <p>Explora nuevos destinos y vive experiencias inolvidables.</p>
+      <p>!Separa tu cupo con el 30% por persona y nuestro sistema de abono sin interés <br>
+         Escríbenos o consulta tu itinerario completo en www.mochilaynosfuimos.com!<br>
+        </p>
+      <ul class="productos">
+          <li>
+              <h1>EGIPTO</h1>
+              <img src="imagenes/Internacionales/Egipto.png" alt="EGIPTO">
+              <p class="producto-descripcion">
+                Fechas disponibles:<br>
+                Desde 6 de mayo hasta 2 de diciembre 2024
+                <br> <br> <br>
+                Desde:</p>
+             <h2>$13.999.000 COP</h2>
+              <a href="https://www.mochilaynosfuimos.com/destinos" class="btn">Ver destinos</a>
+              
+          </li>
+          <li>
+              <h1>TAILANDIA</h1>
+              <img src="imagenes/Internacionales/Tailandia.png" alt="TAILANDIA">
+              <p class="producto-descripcion">Fechas disponibles:<br>
+                 Julio 1, separa tu cupo con solo 3,500,000 por persona, antes del 30 del mes de marzo
+              <br> <br>
+              Desde:</p>
+           <h2>$14.799.000 COP</h2>
+              <a href="https://www.mochilaynosfuimos.com/destinos" class="btn">Ver destinos</a>
+              
+          </li>
+          <li>
+              <h1>EUROPA</h1>
+              <img src="imagenes/Internacionales/EUROPA.png" alt="EUROPA">
+              <p class="producto-descripcion">Fechas disponibles:<br>
+                Desde 13 de abril hasta 6 de junio 2024
+              <br> <br> <br>
+              Desde:</p>
+           <h2>$13.339.000 COP</h2>
+              <a href="https://www.mochilaynosfuimos.com/destinos" class="btn">Ver destinos</a>
+              
+          </li>
+          <li>
+            <h1>PERU</h1>
+            <img src="imagenes/Internacionales/PERU.png" alt="PERU">
+            <p class="producto-descripcion">Fechas disponibles:<br>
+              Desde Bogota: 12 de Junio y 10 de Octubre
+              Desde Medellin: 28 de mayo
+              <br> <br>
+              Desde:</p>
+           <h2>$6.500.000 COP</h2>
+            <a href="https://www.mochilaynosfuimos.com/destinos" class="btn">Ver destinos</a>
+            
+        </li>
+      </ul>
+      <div class="LOGO">
+        <a href="whatsapp://send?phone=+573218241482">
+          <img src="imagenes/whatsapp.png" style= "width: 35px; height: 35px;">
+      </a>
+        <a href="https://www.instagram.com/mochilaynosfuimos/">
+          <img src="imagenes/Instagram_logo.png" style= "width: 35px; height: 35px;">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61557276170889&locale=es_LA">
+          <img src="imagenes/facebook-logo.png" style= "width: 35px; height: 35px;">
+      </a>
+        <a href="https://www.tiktok.com/@mochilaynosfuimos">
+          <img src="imagenes/TikToklogo.png" style= "width: 35px; height: 35px; border: 1px solid #ffffff; border-radius: 50%;">
+          
+        </a>
+      </div>
+  </main>
+  </div>
+</div>
+</body>
+</html>
